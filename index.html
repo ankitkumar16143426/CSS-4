@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightgrey;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      .container::after{
+        content: "";
+      position: absolute;
+      inset: 0;
+      transform: skewY(10deg);
+      background: linear-gradient(to right, #b92b27, #1565c0);
+      z-index: -1;
+      box-shadow: 0px 0px 10px black ;
+      }
+      .shoe {
+        width: 85%;
+        height: 75%;
+        padding: 2%;
+        margin: auto;
+        margin-top: 7.5%;
+        box-shadow: 0px 0px 10px black ;
+      }
+      .des {
+        max-width: 40%;
+        color: white;
+      }
+      .des > h1 {
+        font-size: xx-large;
+        margin-bottom: 30px;
+      }
+      .des > p {
+        font-size: large;
+        margin-bottom: 50px;
+        line-height: 20px;
+      }
+      .shoe-1 {
+        position: absolute;
+        right: 0px;
+        top: 10%;
+        width: 600px;
+        height: 300px;
+      }
+      .shoe-1:hover{
+        right: 0px;
+        top: 15px;
+        width: 900px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shoe" style=" background: linear-gradient(to right, #8a2387, #e94057, #f27121);">
+        <div class="des">
+          <h1>Nike Shoesss</h1>
+          <p>
+            Nike is a renowned footwear brand known for its innovative designs and performance.
+            Offering a wide range of shoes for various sports and lifestyles, Nike combines style
+            and functionality. With cutting-edge technologies like Air Max and Flyknit, Nike shoes
+            deliver comfort and support. From running and basketball to casual wear, Nike continues 
+            to dominate the athletic footwear industry with its iconic Swoosh logo.
+          </p>
+          <p>
+            Nike shoes are popular for their innovative designs, comfort, and performance features.
+            The company offers a wide range of footwear options for various sports, including running,
+            basketball, soccer, tennis, and more. Nike's product line includes iconic models like the Air Jordan, Air Max, and Air Force 1, which have become cultural icons over the years..
+          </p>
+        </div>
+        <img class="shoe-1" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmlrZSUyMHNob2VzfGVufDB8fDB8fHww&w=1000&q=80" alt="shoe1" />
+      </div>
+    </div>
+  </body>
+</html>
